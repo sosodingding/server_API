@@ -57,3 +57,7 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`🚀 API 서버 실행 중: http://localhost:${PORT}`);
 });
+
+app.get("/", (req, res) => {
+    res.send("✅ 서버가 정상적으로 실행 중입니다!");
+});
